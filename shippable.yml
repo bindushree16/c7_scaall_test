@@ -1,0 +1,23 @@
+language: scala
+
+scala:
+  - 2.11.12 
+  - 2.12.7
+
+jdk: 
+  - openjdk7
+  - openjdk8
+  - openjdk11
+  - openjdk10
+  - oraclejdk8
+  - oraclejdk11
+ 
+build:
+  pre_ci_boot:
+    image_name: drydock/u16scaall
+    image_tag: master
+    pull: true
+    
+  ci:
+    - java -version
+    - echo $SHIPPABLE_SCALA_VERSION
