@@ -14,7 +14,7 @@ jdk:
  
 build:
   pre_ci_boot:
-    image_name: drydock/u16scaall
+    image_name: drydock/c7scaall
     image_tag: master
     pull: true
     
